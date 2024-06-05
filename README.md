@@ -26,7 +26,8 @@ id           | company_id | country_id | industry_group_id | year | product_name
 
 This research collect data from over 140 companies in 30 industries over 28 countries.
 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/80021ec7-3374-4238-bc94-5d5aa8741329)
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/bd20a511-21dc-41e4-b7b7-e543ed982c8e)
+
 
 ## C. RESEARCH
 
@@ -65,7 +66,8 @@ ORDER BY sub.carbon_footprint_pcf DESC
 | 10   | Media                                            | 23017                | 2                       | 
 
  
- ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/8d4f5f2d-4b75-4dbf-bb55-ea761ed6f1c7)
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/21633617-487f-4a21-9487-95e6db66014b)
+
 
 
 #### 2. Which products and their industries contribute the most to carbon emissions?

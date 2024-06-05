@@ -33,10 +33,11 @@ JOIN        industry_groups ind ON prod.industry_group_id = ind.id
 GROUP BY    prod.industry_group_id
 ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10
 ```
-| industry_group                                   | carbon_footprint_pcf | 
+| industry_group                                   | carbon_footprint_pcf |    ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/8d4f5f2d-4b75-4dbf-bb55-ea761ed6f1c7)
+
 | -----------------------------------------------: | -------------------: | 
 | Electrical Equipment and Machinery               | 9801558              | 
-| Automobiles & Components                         | 2582264              | 
+| Automobiles & Components                         | 2582264              |    
 | Materials                                        | 577595               | 
 | Technology Hardware & Equipment                  | 363776               | 
 | Capital Goods                                    | 258712               | 

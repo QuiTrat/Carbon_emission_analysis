@@ -173,5 +173,26 @@ order by sub.carbon_footprint_pcf desc
 
 #### 6. What is the trend of carbon footprints (PCFs) over the years?
 
+```
+SELECT 	 year,
+	 sum(carbon_footprint_pcf) AS carbon_footprint_pcf
+FROM	 product_emissions
+GROUP BY year
+ORDER BY year
+
+```
+
+| year | carbon_footprint_pcf | 
+| ---: | -------------------: | 
+| 2013 | 503857               | 
+| 2014 | 624226               | 
+| 2015 | 10840415             | 
+| 2016 | 1640182              | 
+| 2017 | 340271               | 
+
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/c1b1523a-7ec7-4857-a22e-6ce891276418)
+
 
 #### 7. Which industry groups has demonstrated the most notable decrease in carbon footprints (PCFs) over time?
+
+

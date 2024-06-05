@@ -61,28 +61,29 @@ ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10
 
 ```
 SELECT       prod.product_name,
-			 ind.industry_group,
-	         sum(prod.carbon_footprint_pcf) AS carbon_footprint_pcf			 
+             ind.industry_group,
+	     sum(prod.carbon_footprint_pcf) AS carbon_footprint_pcf			 
 FROM        product_emissions prod
 JOIN        industry_groups ind ON prod.industry_group_id = ind.id
-GROUP BY    prod.industry_group_id
+GROUP BY    prod.product_name
 ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10
 ```
 
-| product_name                                                                                                                                                                                                                                                                                                                                                                            | industry_group                                   | carbon_footprint_pcf | 
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -----------------------------------------------: | -------------------: | 
-| ACTI9 IID K 2P 40A 30MA AC-TYPE RESIDUAL CURRENT CIRCUIT BREAKER                                                                                                                                                                                                                                                                                                                        | Electrical Equipment and Machinery               | 9801558              | 
-| VW Polo V 1.6 TDI BlueMotion Technology                                                                                                                                                                                                                                                                                                                                                 | Automobiles & Components                         | 2582264              | 
-| KURALON  fiber                                                                                                                                                                                                                                                                                                                                                                          | Materials                                        | 577595               | 
-| Multifunction Printers                                                                                                                                                                                                                                                                                                                                                                  | Technology Hardware & Equipment                  | 363776               | 
-| Office Chair                                                                                                                                                                                                                                                                                                                                                                            | Capital Goods                                    | 258712               | 
-| Frosted Flakes(R) Cereal                                                                                                                                                                                                                                                                                                                                                                | "Food, Beverage & Tobacco"                       | 111131               | 
-| Alliance HPLC (High Peformance Liquid Chromatography)  The Alliance is an HPLC that is unique in that it has a single set of electronic boards that control the functions for both the solvent delivery system and the autosampler in the liquid chromatograph.                                                                                                                         | "Pharmaceuticals, Biotechnology & Life Sciences" | 72486                | 
-| Mobile Batteries                                                                                                                                                                                                                                                                                                                                                                        | Chemicals                                        | 62369                | 
-| USB software                                                                                                                                                                                                                                                                                                                                                                            | Software & Services                              | 46544                | 
-| "Bloomberg's standard-issue flat panel configuration (prior to 2010) was two 19\" panels mounted on a metal stand. In early 2010 Bloomberg engaged in the WRI Product Life Cycle Roadtest for this functional unit (cradle-to-grave). The functional unit has a lifespan of 5 years, so the emissions indicated [in this report] are the full emissions associated with that lifespan." | Media                                            | 23017                | 
+| product_name                                                                                                                       | industry_group                     | carbon_footprint_pcf | 
+| ---------------------------------------------------------------------------------------------------------------------------------: | ---------------------------------: | -------------------: | 
+| Wind Turbine G128 5 Megawats                                                                                                       | Electrical Equipment and Machinery | 3718044              | 
+| Wind Turbine G132 5 Megawats                                                                                                       | Electrical Equipment and Machinery | 3276187              | 
+| Wind Turbine G114 2 Megawats                                                                                                       | Electrical Equipment and Machinery | 1532608              | 
+| Wind Turbine G90 2 Megawats                                                                                                        | Electrical Equipment and Machinery | 1251625              | 
+| TCDE                                                                                                                               | Materials                          | 198150               | 
+| Land Cruiser Prado. FJ Cruiser. Dyna trucks. Toyoace.IMV def unit.                                                                 | Automobiles & Components           | 191687               | 
+| Retaining wall structure with a main wall (sheet pile): 136 tonnes of steel sheet piles and 4 tonnes of tierods per 100 meter wall | Materials                          | 167000               | 
+| Electric Motor                                                                                                                     | Capital Goods                      | 160655               | 
+| Audi A6                                                                                                                            | Automobiles & Components           | 111282               | 
+| Average of all GM vehicles produced and used in the 10 year life-cycle.      
 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/1da0215a-062a-49b3-8561-9d6d1b1c43a6)
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/e7b0da92-3798-4581-9598-d7cfce5a20ee)
+
 
 
 #### 2. What are the industry groups of these products?

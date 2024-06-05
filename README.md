@@ -21,6 +21,7 @@ id           | company_id | country_id | industry_group_id | year | product_name
 | 10222-1-2013 | 83         | 28         | 8                 | 2013 | Office Chair                                                    | 20.68     | 73                   | 80.63                      | 17.36                        | 2.01                         | 
 | 10261-1-2017 | 14         | 16         | 25                | 2017 | Multifunction Printers                                          | 110       | 1488                 | 30.65                      | 5.51                         | 63.84                        | 
 | 10261-2-2017 | 14         | 16         | 25                | 2017 | Multifunction Printers                                          | 110       | 1818                 | 25.08                      | 4.51                         | 70.41                        | 
+
 #### COUNTRY & INDUSTRY
 
 This research collect data from over 140 companies in 30 industries over 28 countries.
@@ -62,6 +63,8 @@ ORDER BY sub.carbon_footprint_pcf DESC
 | 8    | Chemicals                                        | 62369                | 8                       | 
 | 9    | Software & Services                              | 46544                | 3                       | 
 | 10   | Media                                            | 23017                | 2                       | 
+
+ 
  ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/8d4f5f2d-4b75-4dbf-bb55-ea761ed6f1c7)
 
 

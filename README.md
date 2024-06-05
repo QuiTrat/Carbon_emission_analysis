@@ -45,7 +45,6 @@ ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10
 | Chemicals                                        | 62369                | 
 | Software & Services                              | 46544                | 
 | Media                                            | 23017                | 
-Web searchCopy
 
 
 

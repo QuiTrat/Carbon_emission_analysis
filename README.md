@@ -140,5 +140,38 @@ order by sub.carbon_footprint_pcf desc
 
 
 #### 5. What are the countries with the highest contribution to carbon emissions?
+
+```
+SELECT ROW_NUMBER() OVER (ORDER BY sub.carbon_footprint_pcf desc) AS NoId,
+		sub.country_name,
+		sub.carbon_footprint_pcf
+from 
+(SELECT      countries.country_name,
+			 sum(prod.carbon_footprint_pcf) AS carbon_footprint_pcf
+FROM        product_emissions prod
+JOIN		countries ON prod.country_id = countries.id
+GROUP BY    countries.id
+ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10)
+  as sub
+order by sub.carbon_footprint_pcf desc
+
+```
+
+| NoId | country_name | carbon_footprint_pcf | 
+| ---: | -----------: | -------------------: | 
+| 1    | Spain        | 9786130              | 
+| 2    | Germany      | 2251225              | 
+| 3    | Japan        | 653237               | 
+| 4    | USA          | 518381               | 
+| 5    | South Korea  | 186965               | 
+| 6    | Brazil       | 169337               | 
+| 7    | Luxembourg   | 167007               | 
+| 8    | Netherlands  | 70417                | 
+| 9    | Taiwan       | 62875                | 
+| 10   | India        | 24574                | 
+
+
 #### 6. What is the trend of carbon footprints (PCFs) over the years?
+
+
 #### 7. Which industry groups has demonstrated the most notable decrease in carbon footprints (PCFs) over time?

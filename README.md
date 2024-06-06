@@ -197,4 +197,40 @@ ORDER BY year
 
 #### 7. Which industry groups has demonstrated the most notable decrease in carbon footprints (PCFs) over time?
 
+```
+SELECT 	ind.industry_group,
+	ABS(sub.yoy_change) as '%_yoy_decrease'
+FROM
+(
+SELECT
+    industry_group_id,
+    year,
+    SUM(carbon_footprint_pcf) AS total_carbon,
+    (SUM(carbon_footprint_pcf) - LAG(SUM(carbon_footprint_pcf), 1) OVER (PARTITION BY industry_group_id ORDER BY year)) / LAG(SUM(carbon_footprint_pcf), 1) OVER (PARTITION BY industry_group_id ORDER BY year) * 100 AS yoy_change
+FROM
+    product_emissions
+GROUP BY
+    industry_group_id, year
+) AS sub
+JOIN 
+	industry_groups ind ON 	sub.industry_group_id = ind.id
+WHERE
+	sub.yoy_change between -100 and -50
+ORDER BY sub.yoy_change
+
+```
+| industry_group                           | %_yoy_decrease | 
+| ---------------------------------------: | -------------: | 
+| "Food, Beverage & Tobacco"               | 100.0000       | 
+| Food & Staples Retailing                 | 99.7167        | 
+| Technology Hardware & Equipment          | 98.5248        | 
+| Software & Services                      | 96.9798        | 
+| "Food, Beverage & Tobacco"               | 96.8471        | 
+| Capital Goods                            | 96.2593        | 
+| Semiconductors & Semiconductor Equipment | 92.0000        | 
+| Media                                    | 80.1037        | 
+| Commercial & Professional Services       | 74.3599        | 
+| Consumer Durables & Apparel              | 64.5732        | 
+| Materials                                | 62.2578        | 
+| Commercial & Professional Services       | 58.7727        | 
 

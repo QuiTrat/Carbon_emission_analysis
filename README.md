@@ -172,7 +172,8 @@ order by sub.carbon_footprint_pcf desc
 | 10   | India        | 24574                | 
 
 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/3228bef2-d893-49cf-8885-b85e182a0682)
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/0b2dc4cd-3a0f-4625-8a75-e6c13c62d4a7)
+
 
 #### 6. What is the trend of carbon footprints (PCFs) over the years?
 

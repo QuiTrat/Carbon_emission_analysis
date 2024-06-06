@@ -22,12 +22,11 @@ id           | company_id | country_id | industry_group_id | year | product_name
 | 10261-1-2017 | 14         | 16         | 25                | 2017 | Multifunction Printers                                          | 110       | 1488                 | 30.65                      | 5.51                         | 63.84                        | 
 | 10261-2-2017 | 14         | 16         | 25                | 2017 | Multifunction Printers                                          | 110       | 1818                 | 25.08                      | 4.51                         | 70.41                        | 
 
-#### COUNTRY & INDUSTRY
+#### DATA COLLECTION
 
-This research collect data from over 140 companies in 30 industries over 28 countries.
+Data use in this research is collected from over 140 companies in 30 industries over 28 countries.
 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/bd20a511-21dc-41e4-b7b7-e543ed982c8e)
-
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/6d5d31eb-b5b6-4e8b-a7bf-0b9d801dec90)
 
 ## C. RESEARCH
 
@@ -173,6 +172,8 @@ order by sub.carbon_footprint_pcf desc
 | 10   | India        | 24574                | 
 
 
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/3228bef2-d893-49cf-8885-b85e182a0682)
+
 #### 6. What is the trend of carbon footprints (PCFs) over the years?
 
 ```
@@ -233,4 +234,6 @@ ORDER BY sub.yoy_change
 | Consumer Durables & Apparel              | 64.5732        | 
 | Materials                                | 62.2578        | 
 | Commercial & Professional Services       | 58.7727        | 
+
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/4b5c95d7-ed5c-42dd-a920-6ecb3139cac4)
 

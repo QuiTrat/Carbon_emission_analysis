@@ -171,8 +171,9 @@ order by sub.carbon_footprint_pcf desc
 | 9    | Taiwan       | 62875                | 
 | 10   | India        | 24574                | 
 
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/e44f2035-3cf1-4ce6-8fbb-a76a368aa298)
 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/0b2dc4cd-3a0f-4625-8a75-e6c13c62d4a7)
+
 
 
 #### 6. What is the trend of carbon footprints (PCFs) over the years?

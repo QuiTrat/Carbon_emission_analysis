@@ -157,6 +157,7 @@ ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10)
 order by sub.carbon_footprint_pcf desc
 
 ```
+From 2014 to 2017, In total, Companies from Spain contributed highest carbonfootprint, most came from "Gamesa Corporación Tecnológica, S.A", a company operated in  Electrical Equipment and Machinery industry.
 
 | NoId | country_name | carbon_footprint_pcf | 
 | ---: | -----------: | -------------------: | 
@@ -173,7 +174,9 @@ order by sub.carbon_footprint_pcf desc
 
 ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/e44f2035-3cf1-4ce6-8fbb-a76a368aa298)
 
+Howerver, Spain only contribute highest carbonfootprint just in 2015. In others year, Companies from Japan is always in top 5 of country with highest contribution carbonfootprint.
 
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/f11f9882-c54f-4afa-95c0-15d6fd79afdb)
 
 
 #### 6. What is the trend of carbon footprints (PCFs) over the years?

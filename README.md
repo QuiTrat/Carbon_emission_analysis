@@ -32,7 +32,8 @@ Data use in this research is collected from over 140 companies in 30 industries 
 
 #### 1. What are the industries with the highest contribution to carbon emissions?
 
-Hereunder is top 10 of industry with the highest contribution to carbon emissions
+Hereunder is top 10 of industry with the highest contribution to carbon emissions from 2013 to 2017
+
 ```
 SELECT ROW_NUMBER() OVER (ORDER BY sub.carbon_footprint_pcf DESC) AS NoId,
 		sub.industry_group,
@@ -64,10 +65,11 @@ ORDER BY sub.carbon_footprint_pcf DESC
 | 9    | Software & Services                              | 46544                | 3                       | 
 | 10   | Media                                            | 23017                | 2                       | 
 
- 
-![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/21633617-487f-4a21-9487-95e6db66014b)
+ ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/21633617-487f-4a21-9487-95e6db66014b)
 
+Electrical Equipment and Machinery industry contributed highest carbonfootprint during this period, although its contribution was just came from only in 2015. In other years, the Automobiles & Components always in top of industries contributed highest carbonfootprint.
 
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/2a179581-9751-4300-90a5-b15c7384e643)
 
 #### 2. Which products and their industries contribute the most to carbon emissions?
 
@@ -89,6 +91,8 @@ ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10)
 order by sub.carbon_footprint_pcf desc
 
 ```
+As the result of above research, top products contributed highest carbonfootprint are produced by companies operated in industries which are in top highest contribution carbon emission.
+ 
 
 | NoId | product_name                                                                                                                       | industry_group                     | carbon_footprint_pcf | 
 | ---: | ---------------------------------------------------------------------------------------------------------------------------------: | ---------------------------------: | -------------------: | 
@@ -104,6 +108,11 @@ order by sub.carbon_footprint_pcf desc
 | 10   | Average of all GM vehicles produced and used in the 10 year life-cycle.                                                            | Automobiles & Components           | 100621               | 
 
 ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/e7b0da92-3798-4581-9598-d7cfce5a20ee)
+
+The most contributions came from many kinds of Wind Turbin products, althought its just only contribute in 2015. The research showed the luxury cars are amongs products that contributed highes carbonfootprints in each year of the research.
+
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/4ca04fe2-93cd-4c8a-bd77-6c2b50f368be)
+
 
 #### 4. What are the companies with the highest contribution to carbon emissions?
 
@@ -125,6 +134,8 @@ ORDER BY    sum(prod.carbon_footprint_pcf) desc LIMIT 10)
 order by sub.carbon_footprint_pcf desc
 
 ```
+In total, during the period from 2013 to 2017, Gamesa Corporación Tecnológica, S.A, the company produced Wind Turbin is in top companies contributed highest carbonfootprint.
+Companies operated in Automobile industry are in top highest contribution in each year.
 
 | NoId | company_name                            | industry_group                     | carbon_footprint_pcf | 
 | ---: | --------------------------------------: | ---------------------------------: | -------------------: | 
@@ -139,6 +150,9 @@ order by sub.carbon_footprint_pcf desc
 | 9    | "Lexmark International, Inc."           | Technology Hardware & Equipment    | 132012               | 
 | 10   | "Daikin Industries, Ltd."               | Capital Goods                      | 105600               | 
 
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/055e74ab-f2c0-4260-8a3d-f6ee82d75ee7)
+
+![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/2c9907ea-3bc4-4154-9a5c-d8efc78c626e)
 
 #### 5. What are the countries with the highest contribution to carbon emissions?
 
@@ -174,7 +188,7 @@ From 2014 to 2017, In total, Companies from Spain contributed highest carbonfoot
 
 ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/e44f2035-3cf1-4ce6-8fbb-a76a368aa298)
 
-Howerver, Spain only contribute highest carbonfootprint just in 2015. In others year, Companies from Japan is always in top 5 of country with highest contribution carbonfootprint.
+Howerver, Spain only contribute highest carbonfootprint just in 2015. In others year, USA, Germany and Japan are always in top 5 countries with highest contribution carbon emissions.
 
 ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/f11f9882-c54f-4afa-95c0-15d6fd79afdb)
 
@@ -197,6 +211,8 @@ ORDER BY year
 | 2015 | 10840415             | 
 | 2016 | 1640182              | 
 | 2017 | 340271               | 
+
+The research show the increase in carbon footprints ơver the year.
 
 ![image](https://github.com/QuiTrat/Carbon_emission_analysis/assets/170105739/c1b1523a-7ec7-4857-a22e-6ce891276418)
 
